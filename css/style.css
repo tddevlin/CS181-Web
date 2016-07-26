@@ -1,0 +1,125 @@
+body {
+	background: #273033;
+	color: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2 {
+	font-weight: bold;
+	color: #85C353;
+}
+table td, p {
+	font-size: 16px;
+	color: #AFB1B4;
+	font-weight: normal;
+}
+a {
+	color: #BD5D7C;
+}
+p.login {
+	font-family: monospace;
+}
+table th, h3 {
+	color: #85C353;
+	text-align: left;
+	font-size: 20px;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.title {
+	margin-top: 80px;
+}
+.jumbotron {
+	background-image: url('../images/microarray.jpg');
+	color: white;
+	text-align: center;
+	background-size: 125%;
+  	height: 360px;
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 0;
+	text-align: left;
+	vertical-align: bottom;
+}
+.jumbotron h1 {
+	color: white;
+	font-size: 100px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: right;
+	vertical-align: middle;
+}
+.jumbotron.not-main h1 {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 25px;
+}
+.jumbotron.not-main {
+	background-image: url('../images/microarray.jpg');
+	background-size: 125%;
+  	height: 200px;
+}
+.navbar-inverse {
+	background: #273033;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #85C353;
+	font-size: 16px;
+}
+.navbar-brand span {
+	color: #85C353;
+}
+.navbar-inverse .navbar-brand {
+    color: #85C353;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: #85C353;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #85C353;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.btn-primary {
+	color: #fff;
+	background-color: transparent;
+	border-color: white;
+	margin-bottom: 5px;
+}
+.btn-primary:hover {
+	color: #85C353;
+	background-color: white;
+	border-color: white;
+}
+.call-to-action {
+	text-align: left;
+}
+.call-to-action p {
+	margin-bottom: 30px;
+	line-height: 25px;
+}
+.img-responsive {
+	max-width: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+a.faq-q {
+	color: #BD5D7C;
+	margin-top: 35px;
+	font-size: 16px;
+	text-decoration: none;
+}
+div.faq {
+	margin-bottom: 80px;
+}
+.table>thead>tr>th {
+	border-bottom-color: #AFB1B4;
+}
+.table>tbody>tr>td {
+	border-top-color: #AFB1B4;
+}
