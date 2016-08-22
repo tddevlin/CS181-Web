@@ -2,6 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS181</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
@@ -22,14 +23,16 @@
       <a class="navbar-brand" href="./index.html">
         CS181
       </a>
+      <a href="https://www.brown.edu/academics/computational-molecular-biology/">
+        <img src="images/CCMB logo.png" class="logo">
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./info.html">Info</a></li>
+        <li class="active"><a href="./info.html">Info</a></li>
         <li><a href="./staff.html">Staff</a></li>
         <li><a href="./lectures.html">Lectures</a></li>
-        <li><a href="#">Assignments</a></li>
-        <li><a href="#">Julia</a></li>
+        <li><a href="./assignments.html">Assignments</a></li>
       </ul>
     </div>
   </div>
@@ -45,47 +48,37 @@
 
 <div class="container faq">
 
+  <h2>Course Materials</h2>
+  <p><a href="./info/syllabus.pdf">Syllabus</a></p>
+
   <h2>Frequently Asked Questions</h2>
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse1">Who takes the course?</a></p>
   <div id="collapse1" class="panel-collapse collapse" role="tabpanel">
-    <p class="faq-a">As an interdisciplinary course, CS181 attracts a diverse group of students.  Past students have ranged from sophomores concentrating in Computer Science and Computational Biology through Ph.D. students in Computer Science, Applied Mathematics, and Biology.</p>
+    <p class="faq-a">As an interdisciplinary course, CS181 attracts a diverse group of students. Past students have ranged from sophomores concentrating in Computer Science and Computational Biology through Ph.D. students in Computer Science, Applied Mathematics, and Biology. The course staff will do its best to ensure that <em>all</em> students have a chance to succeed.</p>
   </div>
 
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse2">What biology background is needed?</a></p>
   <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">There are no biology prerequisites, and no prior biology knowledge is assumed.  The material that you need to know will be covered in class.</p>
+  <p class="faq-a">There are no biology prerequisites, and no prior biology knowledge is assumed; the material that you need to know will be covered in class. Students whose backgrounds are in the life sciences, however, will be expected to dig deeper into the biology.</p>
   </div>
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse3">What computer science and mathematics background is needed?</a></p>
   <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">Officially, one of CS16, CS18, or CS19 (i.e. a yearlong introduction to computer science) are prerequisites for the course.  This can be waived by the instructor.  Students in the course generally have some prior exposure to basic concepts of discrete math (graphs, recurrence relations, etc.), discrete probability (random variables, independence), and algorithms (big-O notation, pseudocode).</p></div>
+  <p class="faq-a">Officially, one of CS16, CS18, or CS19 (i.e. a yearlong introduction to computer science). This can be waived by the instructor (especially for life science students). Students in the course generally have some prior exposure to basic concepts of discrete math (graphs, recurrence relations), discrete probability (random variables, independence), and algorithms (big-O notation, pseudocode).</p></div>
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse4">What programming background is needed?</a></p>
   <div id="collapse4" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">This is not a programming course, although there will be programming assignments.  The goal of these assignments is to gain a deeper understanding of the algorithms by implementing them and testing them on real data.  Thus, some rudimentary programming skills (arrays, loops, functions, etc.) are required.  In recent years, we have been experimenting with a new language for scientific computing called <a href="./julia.html">Julia</a> for the programming assignments, although we also allow students to do programming assignments in other languages.</p></div>
+  <p class="faq-a">This is not a programming-heavy course, although there will be programming assignments.  The goal of these assignments is to gain a deeper understanding of the algorithms by implementing them and testing them on real data.  Thus, some rudimentary programming skills (arrays, loops, functions, etc.) are required.  In recent years, we have been experimenting with a new language for scientific computing called Julia (see above) for the programming assignments, although we also allow students to do programming assignments in other languages.</p></div>
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse5">I am experienced in molecular biology, but do not have any formal mathematical or computational training.  Can I take the course?</a></p>
   <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">In the past, some students with this background (primarily Ph.D. students) have taken the course and done well. At the same time, all students in the class should be prepared to complete medium-scale programming projects, learn some new mathematical concepts, and reason about algorithms in a rigorous manner. Please reach out to a member of the course staff if you are unsure of your background.</p></div>
+  <p class="faq-a">This year, we are attempting to make the course genuinely accessible for students without a computer science background (there will be separate homework questions for biology students, for example). At the same time, all students in the class should be prepared to complete medium-scale programming assignments, learn some new mathematical concepts, and reason about algorithms in a rigorous manner. Please reach out to a member of the course staff if you are unsure of your background.</p></div>
 
   <p><a class="faq-q" data-toggle="collapse" href="#collapse6">I am interested in learning how to analyze *-Seq data from my (advisor's) lab.  Will this course help me?</a></p>
   <div id="collapse6" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">Possibly, but perhaps not in the way that you expect.  The goals of CS181 are to teach the algorithmic concepts that underlie a wide variety of software that is used to analyze biological data, particularly in genetics, genomics, and proteomics.
-
-  The course will not teach you how to use any particular biological software package.  Rather, you will learn how this software works, and more importantly for the long-term, how to think about biological problems in a computational way.  Thus, when the latest and greatest technology for measuring DNA/RNA/protein is released in 1, 5, or 10 years' time, you will have some algorithmic skills to work with this data, without waiting for the rest of the community to develop tools.
-
-  If your interests are more narrowly focused on a particular, near-term application, another course might be more appropriate.</p></div>
-
-  <p><a class="faq-q" data-toggle="collapse" href="#collapse7">Can I audit the course?</a></p>
-  <div id="collapse7" class="panel-collapse collapse" role="tabpanel">
-  <p class="faq-a">Generally, yes, but please check with the instructor first.</p></div>
-
-  <h2>Course Materials</h2>
-  <p><a href="./info/syllabus.pdf">Syllabus</a></p>
-
-
+  <p class="faq-a">Possibly, but perhaps not in the way that you expect. The goals of CS181 are to teach the algorithmic concepts that underlie a wide variety of software that is used to analyze biological data, particularly in genetics, genomics, and proteomics. The course will not teach you how to use any particular biological software package. Rather, you will learn how this software works, and more importantly for the long-term, how to think about biological problems in a computational way. Thus, when the latest and greatest technology for measuring DNA/RNA/protein is released in 5 or 10 years' time, you will have some algorithmic skills to work with this data, without waiting for the rest of the community to develop tools. If your interests are more narrowly focused on a particular, near-term application, another course might be more appropriate.</p></div>
 
 </div>
 
