@@ -7,8 +7,10 @@ h1,
 h2 {
 	font-weight: bold;
 	color: #85C353;
+	margin-bottom: 20px;
+	margin-top: 30px;
 }
-table td, p {
+table td, p, ol {
 	font-size: 16px;
 	color: #AFB1B4;
 	font-weight: normal;
@@ -16,21 +18,36 @@ table td, p {
 a {
 	color: #BD5D7C;
 }
+a:hover, a:focus{
+	color: white;
+	text-decoration: none;
+}
 p.login {
 	font-family: monospace;
 }
 table th, h3 {
-	color: #85C353;
+	color: #BD5D7C;
 	text-align: left;
 	font-size: 20px;
+}
+section>h3 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.pics section {
+	text-align: center;
+	padding-top: 30px;
+}
+section>p {
+	margin-bottom: 5px
 }
 .logo {
 	height: 50px;
 	padding-top: 15px;
 	padding-bottom: 17px
 }
-.navbar {
-	margin-bottom: 0;
+.logo-div {
+	float: left;
 }
 .title {
 	margin-top: 80px;
@@ -83,6 +100,21 @@ table th, h3 {
 .side-text {
 	padding-top: 5px;
 }
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #85C353;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: #85C353;
+}
+.navbar-inverse .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+}
 .navbar-inverse {
 	background: #273033;
 	border: 0;
@@ -121,14 +153,17 @@ table th, h3 {
 	text-align: left;
 }
 .call-to-action p {
-	margin-bottom: 30px;
 	line-height: 25px;
 }
 .img-responsive {
 	max-width: 200px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
+
+	text-align: center;
+}/*
+div.pics {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}*/
 a.faq-q {
 	color: #BD5D7C;
 	margin-top: 35px;
@@ -143,4 +178,11 @@ div.faq {
 }
 .table>tbody>tr>td {
 	border-top-color: #AFB1B4;
+}
+tr.chapter-row >td {
+	color: #85C353;
+	font-weight: bold;
+}
+footer {
+	min-height: 100px;
 }
