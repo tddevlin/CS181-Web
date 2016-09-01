@@ -10,7 +10,11 @@ h2 {
 	margin-bottom: 20px;
 	margin-top: 30px;
 }
-table td, p, ol {
+h4 {
+	color: #85C353;
+	font-weight: bold;
+}
+table td, p, ol, ul {
 	font-size: 16px;
 	color: #AFB1B4;
 	font-weight: normal;
